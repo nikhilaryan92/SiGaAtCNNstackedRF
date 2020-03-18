@@ -165,7 +165,7 @@ for threshold in numpy.arange(0,1,0.05):
     evaluate_threshold(threshold)
 
 roc_auc = auc(fpr, tpr)
-plt.plot(fpr,tpr, 'r', label = 'Gated-Attention = %0.2f' %roc_auc)
+plt.plot(fpr,tpr, 'r', label = 'SiGaAtCNN-CLN = %0.2f' %roc_auc)
 plt.xlabel('1-Sp (False Positive Rate)')
 plt.ylabel('Sn (True Positive Rate)')
 plt.title('Receiver Operating Characteristics')
