@@ -102,8 +102,8 @@ for train_index, test_index in kfold.split(X_clinical, Y_clinical):
     # first Clinical CNN Model***********************************************************
     #init =initializers.glorot_normal(seed=1)
     bias_init =keras.initializers.Constant(value=0.1)
-    #main_input_clinical = Input(shape=(25,1),name='Input')# for metabric data
-    main_input_clinical = Input(shape=(11,1),name='Input')# for TCGA data
+    main_input_clinical = Input(shape=(25,1),name='Input')# for metabric data
+    #main_input_clinical = Input(shape=(11,1),name='Input')# for TCGA data
     
     conv_clinical1 = Conv1D(filters=num_of_filters,kernel_size=1,strides=2,padding='same',name='Conv1D_clinical1',kernel_initializer='glorot_uniform', bias_initializer=bias_init,activity_regularizer=l2(0.001))(main_input_clinical)
     #activ = nlrelu(conv_clinical1,'nrelu')
