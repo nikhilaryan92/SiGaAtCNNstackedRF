@@ -31,6 +31,8 @@ SiGaAtCNN_expr.py
 
 SiGaAtCNN_vs_CNN.py
 
+AdaboostRF.py
+
 RF_All.py
 
 ttest.py
